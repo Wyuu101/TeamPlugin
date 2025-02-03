@@ -1,0 +1,26 @@
+name: Team
+version: '${project.version}'
+main: net.dxzzz.team.Team
+depend: [PlaceholderAPI,HeadDatabase]
+
+commands:
+  zd:
+    description: "组队系统"
+    permission: Team.Normal
+    usage: "§3§l⚎⚎⚎⚎⚎⚎⚎⚎ §6Dxzzz.Net §f- §9组队喇叭 §3§l⚎⚎⚎⚎⚎⚎⚎⚎\n
+            §3 > §e/zd cj [队伍名字(可空)]  §3§l➽  §a创建队伍，可中文，2-5字\n
+            §3 > §e/zd lt  §3§l➽  §a开启默认队伍聊天\n
+            §3 > §e/zd t <玩家>  §3§l➽  §a从队伍中踢出一个玩家\n
+            §3 > §e/zd tc <数量>  §3§l➽  §a退出队伍，队长退出即解散\n
+            §3 > §e/zd xx  §3§l➽  §a查看队伍信息\n
+            §3 > §e/zd yq <玩家>  §3§l➽  §a邀请他人加入队伍\n
+            §3 > §e/zd zj  §3§l➽  §a一键邀请最近一起组队的玩家\n
+            §3 > §e/zd zr <玩家>  §3§l➽  §a转让队长(需要是队长)\n
+            §3 > §c使用#开头可进行队伍聊天,§7每个队伍最多6人,退出游戏,即退出队伍！
+            §3 > §7创建队伍后,队长邀请队员,队员通过点击聊天信息或输入命令来加入！
+            §3§l⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎"
+
+
+permissions:
+  Team.Normal:
+    default: true

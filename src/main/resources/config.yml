@@ -1,0 +1,35 @@
+#TeamPlugin by X_32xm
+#for only Dxzzz.net
+#QQ:2644489337
+
+#！！！注意：1、本插件需要手动创建一个Team数据库,插件会自动连接到数据库并创建表！！！
+#          2、本插件需要Authme数据库支持
+
+
+#数据库设置(仅支持MySQL)
+DataBase:
+  MySQL:
+    Host: localhost
+    Username: root
+    Password:
+    Port: 3306
+
+
+
+ChatSettings:
+  #公会频道聊天事件触发优先级
+  #可选参数: MONITOR/HIGHEST/HIGH/NORMAL/LOW/LOWEST 从LOW到MONITOR，监听到的消息越来越晚！
+  Priority: LOW
+
+  #是否判断event.isCancelled()
+  DetectCancelOrNot: true
+
+  #组队聊天前缀（支持PlaceholderAPI)
+  TalkPrefix: "§6[§c队§a伍§6] §e[%team_title%] §7%tag_chinese% §a> §f "
+
+  #允许队伍的最大人数
+  MaxPlayers: 6
+
+FastInviteSettings:
+  #是否启用快速邀请(下蹲右键他人)
+  Enable: true
